@@ -119,3 +119,126 @@ footer {
   font-size: 14px;
   color: #94a3b8;
 }
+.hero {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+/* Badge */
+.hero-badge {
+  display: inline-block;
+  background: #1e293b;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Headings */
+.hero h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.hero h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #94a3b8;
+}
+
+/* Description */
+.hero-desc {
+  margin: 20px 0;
+  max-width: 520px;
+  color: #cbd5f5;
+}
+
+/* Typing animation */
+.typing {
+  border-right: 2px solid #06b6d4;
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 80px 0;
+  gap: 40px;
+}
+
+/* Text content */
+.hero-content {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-subtitle {
+  color: #06b6d4;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin: 10px 0;
+}
+
+.hero-text {
+  color: #cbd5f5;
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+/* Small image like background element */
+.hero-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0.25;              /* IMPORTANT: faded look */
+  filter: grayscale(100%);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Desktop-only subtle positioning */
+@media (min-width: 900px) {
+  .hero-image {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.hero-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  /* Make image clear */
+  opacity: 1;
+  filter: none;
+
+  /* Professional polish */
+  border: 3px solid #1e293b;
+  background: #020617;
+}
