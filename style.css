@@ -267,3 +267,28 @@ footer {
   color: #0b1220;
   transform: translateY(-2px);
 }
+.hero-socials {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-socials a {
+  display: inline-block;
+  padding: 6px 10px;
+  background: #0b1220;
+  color: #06b6d4;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-socials a:hover {
+  background: #06b6d4;
+  color: #0b1220;
+  transform: translateY(-2px);
+}
